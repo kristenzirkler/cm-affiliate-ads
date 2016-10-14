@@ -1,0 +1,10 @@
+highlighter: rouge
+github: [Repository metadata]
+
+baseurl: "http://kristenzirkler.github.io/cm-affiliate-ads"
+
+# Sass
+sass:
+  sass_dir: scss
+  style: :compressed
+  line_numbers: true
