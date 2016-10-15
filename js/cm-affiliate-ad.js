@@ -8,7 +8,7 @@ oi.domReady(function () {
 
     var el,
         dataTarget = 'cmAffiliateAd',
-        adWidthDefault = '250',
+        adWidthDefault = '300',
         adHeightDefault = '250',
         adCampaignDefault = '000',
         adSlot = '',
@@ -30,7 +30,7 @@ oi.domReady(function () {
         if (!adCampaign) { adCampaign = adCampaignDefault; }
 
         adImage = adImageUrl + 'cm-affiliate-ad-'+adCampaign+'-'+adWidth+'x'+adHeight+'.png';
-
+        
         if (affiliateID) {
             document.getElementById(adSlot).innerHTML = '<a href="'+adLink+'&affid='+affiliateID+'"><img src="'+adImage+'" alt="Channel Master" width="'+adWidth+'" height="'+adHeight+'" /></a>';
         } else {
