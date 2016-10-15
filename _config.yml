@@ -1,7 +1,7 @@
 highlighter: rouge
 github: [Repository metadata]
 
-baseurl: "http://kristenzirkler.github.io/cm-affiliate-ads"
+baseurl: "https://kristenzirkler.github.io/cm-affiliate-ads"
 
 # Sass
 sass:
