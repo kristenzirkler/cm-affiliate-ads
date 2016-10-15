@@ -1,0 +1,22 @@
+#affiliate-ad-preview {
+  .content {
+    max-width: $page-size;
+    margin: 0 auto;
+    padding-top: 40px;
+    font-size: 14px;
+  }
+  h1 {
+    margin: 0;
+  }
+  h2 {
+    border-top: 1px solid $gray;
+    padding: 10px 0;
+    margin: 40px 0 0;
+  }
+  h3 {
+    margin: 0;
+  }
+  p {
+    margin: 0 0 1em;
+  }
+}

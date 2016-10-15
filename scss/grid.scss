@@ -1,0 +1,67 @@
+// Columns -------------------------------------------------------
+.row {
+  overflow: hidden;
+}
+.column {
+  float: left;
+  padding: 0 20px;
+  width: 100%;
+  img {
+    max-width: 100%;
+  }
+}
+.sm-one-half {
+  width: 50%;
+}
+.sm-one-third {
+  width: 33.33%;
+}
+.sm-two-thirds {
+  width: 66.66%;
+}
+.sm-one-forth {
+  width: 25%;
+}
+.sm-one-sixth {
+  width: 16.6%;
+}
+
+@media only screen and (min-width: 768px) {
+
+.md-one-half {
+  width: 50%;
+}
+.md-one-third {
+  width: 33.33%;
+}
+.md-two-thirds {
+  width: 66.66%;
+}
+.md-one-forth {
+  width: 25%;
+}
+.md-one-sixth {
+  width: 16.6%;
+}
+
+}//min-width:768px
+
+@media only screen and (min-width: 950px) {
+
+.lg-one-half {
+  width: 50%;
+}
+.lg-one-third {
+  width: 33.33%;
+}
+.lg-two-thirds {
+  width: 66.66%;
+}
+.lg-one-sixth {
+  width: 16.6%;
+}
+.lg-one-forth {
+  width: 25%;
+}
+
+}//min-width: 950px
