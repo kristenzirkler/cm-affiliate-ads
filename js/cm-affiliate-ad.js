@@ -8,6 +8,9 @@ oi.domReady(function () {
 
     var el,
         dataTarget = 'cmAffiliateAd',
+        adWidthDefault = '250',
+        adHeightDefault = '250',
+        adCampaignDefault = '000',
         adSlot = '',
         adWidth = '',
         adHeight = '',
@@ -19,9 +22,12 @@ oi.domReady(function () {
     for(var i = 0; el = document.getElementById(dataTarget + i); i++) {
         adSlot = dataTarget+i;
         adWidth = el.getAttribute('data-width');
+        if (!adWidth) { adWidth = adWidthDefault; }
         adHeight = el.getAttribute('data-height');
+        if (!adHeight) { adHeight = adHeightDefault; }
         affiliateID = el.getAttribute('data-affiliateid');
         adCampaign = el.getAttribute('data-campaign');
+        if (!adCampaign) { adCampaign = adCampaignDefault; }
 
         adImage = adImageUrl + 'cm-affiliate-ad-'+adCampaign+'-'+adWidth+'x'+adHeight+'.png';
 
