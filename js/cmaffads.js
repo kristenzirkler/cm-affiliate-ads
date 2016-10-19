@@ -16,7 +16,7 @@ oi.domReady(function () {
         adHeight = '',
         affiliateID = '',
         adCampaign = '000',
-        adImageUrl = 'https://s3-us-west-2.amazonaws.com/downloads.channelmaster.com/Affiliate+Images/'
+        adImageUrl = 'http://downloads.channelmaster.com/Affiliate+Images/'
         adLink = 'http://www.channelmaster.com/ProductDetails.asp?ProductCode=CM-7500GB16&Click=116838'; //must have ?
 
     for(var i = 0; el = document.getElementById(dataTarget + i); i++) {
