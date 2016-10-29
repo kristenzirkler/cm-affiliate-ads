@@ -15,9 +15,23 @@ oi.domReady(function () {
 
 // Get Product Data ------------------------------------------------
     // ProductID from Element
-        
+
+        productID = '1353'; //TEMP
+        var thisApiCall2 = apiCall + productID;
+var request = new XMLHttpRequest();
+request.open("GET", thisApiCall2, false);
+request.send();
+var xml = request.responseXML;
+var users = xml.getElementsByTagName("Products");
+for(var i = 0; i < users.length; i++) {
+    var user = users[i];
+    var names = user.getElementsByTagName("ProductCode");
+    for(var j = 0; j < names.length; j++) {
+        alert(names[j].childNodes[0].nodeValue);
+    }
+}
     // Additional Product Information from API
-    if (1 ==2) {
+    if (1 == 2) {
         // API
         productID = '1353'; //TEMP
         var thisApiCall = apiCall + productID;

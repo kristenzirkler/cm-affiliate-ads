@@ -20,3 +20,63 @@
     margin: 0 0 1em;
   }
 }
+
+.cmproduct-ad {
+  display: block;
+  padding: 20px;
+  border: 1px solid $border-color;
+  background-color: $white;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  span {
+    display: block;
+    color: $font-color;
+    margin-left: 55%;
+  }
+  .image {
+    width: 50%;
+    float: left;
+    margin: 0;
+  }
+  img {
+    width: 100%;
+  }
+  .callout-short {
+    display: block;
+    padding: 3px 5px;
+    margin: 0;
+    position: absolute;
+    top: 0; left: 0;
+    background: $border-color;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  .title {
+    font-family: $accent-font;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  .subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .adbutton {
+    font-family: $accent-font;
+    width: 120px;
+    background: $button-color;
+    color: $white;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  .callout-long {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  &:hover {
+    .adbutton {
+      background: $button-hover;
+    }
+  }
+}
