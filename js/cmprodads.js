@@ -10,26 +10,11 @@ oi.domReady(function () {
     var el,
         adSlot = 'cmProductAd0',
         dataTarget = 'cmProductAd',
-        apiCall = 'https://www.channelmaster.com/net/WebService.aspx?Login=kristenzirkler@gmail.com&EncryptedPassword=6B9500ECF66158FC8420E9D18AAFD4B1D4DD0B279E4226A2B7DE63882DD96492&EDI_Name=Generic\Products&SELECT_Columns=p.ProductID,p.ProductName,pd.ProductDescriptionShort&WHERE_Column=p.ProductID&WHERE_Value=',
+        apiCall = '',
         productID = '';
 
 // Get Product Data ------------------------------------------------
     // ProductID from Element
-
-        productID = '1353'; //TEMP
-        var thisApiCall2 = apiCall + productID;
-var request = new XMLHttpRequest();
-request.open("GET", thisApiCall2, false);
-request.send();
-var xml = request.responseXML;
-var users = xml.getElementsByTagName("Products");
-for(var i = 0; i < users.length; i++) {
-    var user = users[i];
-    var names = user.getElementsByTagName("ProductCode");
-    for(var j = 0; j < names.length; j++) {
-        alert(names[j].childNodes[0].nodeValue);
-    }
-}
     // Additional Product Information from API
     if (1 == 2) {
         // API
