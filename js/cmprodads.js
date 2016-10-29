@@ -10,7 +10,7 @@ oi.domReady(function () {
     var el,
         adSlot = 'cmProductAd0',
         dataTarget = 'cmProductAd',
-        apiCall = 'http://www.channelmaster.com/net/WebService.aspx?Login=kristenzirkler@gmail.com&EncryptedPassword=6B9500ECF66158FC8420E9D18AAFD4B1D4DD0B279E4226A2B7DE63882DD96492&EDI_Name=Generic\Products&SELECT_Columns=p.ProductID,p.ProductName,pd.ProductDescriptionShort&WHERE_Column=p.ProductID&WHERE_Value=',
+        apiCall = 'https://www.channelmaster.com/net/WebService.aspx?Login=kristenzirkler@gmail.com&EncryptedPassword=6B9500ECF66158FC8420E9D18AAFD4B1D4DD0B279E4226A2B7DE63882DD96492&EDI_Name=Generic\Products&SELECT_Columns=p.ProductID,p.ProductName,pd.ProductDescriptionShort&WHERE_Column=p.ProductID&WHERE_Value=',
         productID = '';
 
 // Get Product Data ------------------------------------------------
