@@ -1,0 +1,64 @@
+---
+layout: frame-blank
+title: Simple Ad Instructions
+slug: simple-ad-preview
+path: ../
+---
+<script src="{{ site.baseurl }}/js/cmsimpleads.js"></script>
+<h1>Simple Ad Instructions</h1>
+
+<div class="row">
+	<div class="column">
+		<p>repleace everything in orange for new ads. Iterate the number after cmSimpleAd if there are multiple ads on one page. Ad will be responsive if no data-width or data-height is supplied. Ad image should be 2x the expected display size to be optimzed for retina screens.</p>
+		<h3>Ad Code</h3>
+		<div class="code">
+		<pre><code>&lt;script src="http://downloads.channelmaster.com/cmsimpleads.js"&gt;&lt;/script&gt;
+		&lt;div id="cmSimpleAd<em>0</em>"
+			data-imagepath="<em>http://downloads.channelmaster.com/Banner+Images/category-banner-outdoor-001.png</em>"
+			data-url="<em>http://www.channelmaster.com/ProductDetails.asp?ProductCode=CM-7500GB16</em>"
+			data-campaign="<em>cat-outdoor-antenna</em>"
+		&gt;&lt;/div&gt;</code></pre>
+		</div>
+			</div>
+		</div>
+		<div id="cmSimpleAd0"
+			data-imagepath="http://downloads.channelmaster.com/Banner+Images/category-banner-outdoor-001.png"
+			data-url="http://www.channelmaster.com/ProductDetails.asp?ProductCode=CM-7500GB16"
+			data-campaign="cat-outdoor-antenna"
+		></div>
+		<div id="cmSimpleAd1"
+			data-width="938"
+			data-height="244"
+			data-imagepath="http://downloads.channelmaster.com/Banner+Images/category-banner-outdoor-001.png"
+			data-url="http://www.channelmaster.com/ProductDetails.asp?ProductCode=CM-7500GB16"
+			data-campaign="cat-outdoor-antenna"
+		></div>
+	</div>
+	<div class="column">
+		<h3>Available Parameters</h3>
+		<ul>
+			<li>data-imagepath - fullurl - ex: http://downloads.channelmaster.com/Banner+Images/category-banner-outdoor-001.png</li>
+			<li>data-url - fullurl - ex: http://www.channelmaster.com/ProductDetails.asp?ProductCode=CM-7500GB16</li>
+			<li>data-campaign - string - ex: cat-outdoor-antenna</li>
+			<li>data-width - numeric - ex: 250 (leave off for responsive ad)</li>
+			<li>data-height - numeric - ex: 250 (leave off for responsive ad)</li>
+		</ul>
+		<!--h3>Available Sizes</h3>
+		<ul>
+			<li>300x250</li>
+			<li>336x280</li>
+			<li>728x90</li>
+			<li>300x600</li>
+			<li>250x250</li>
+			<li>468x60</li>
+			<li>240x400</li>
+		</ul-->
+	</div>
+</div>
+<h2>Additional States</h2>
+<div class="row">
+	<div class="column">
+		<p>If no imagepath is passed, error appears.</p>
+		<div id="cmSimpleAd2"></div>
+	</div>
+</div>
