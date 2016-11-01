@@ -5,51 +5,30 @@ slug: product-ad-preview
 path: ../
 ---
 
-<script src="{{ site.baseurl }}/js/cmprodads.js"></script>
-<!--
-<h1>Product Ad Preview</h1>
-
-<h2>Installation Instructions</h2>
-
+<script src="{{ site.baseurl }}/js/cmsimpleads.js"></script>
 <div class="row">
 	<div class="column">
-
-<p>Only thing that is required is productID. <span style="color:#f00;font-weight:bold;">KZ NEEDS To replace url with CM.com before WE LAUNCH THE PROGRAM WITH NEW THINGS.</span></p>
-<h3>Ad Code</h3>
-<div class="code">
-<pre><code>&lt;script src="/cmprodads.js"&gt;&lt;/script&gt;
-&lt;div id="cmProductAd<em>0</em>"
-	data-productid="<em>THEPRODUCTID</em>"
-&gt;&lt;/div&gt;</code></pre>
-</div>
-
-	</div>
-</div>
-
-<h2>Default View</h2>
-
-<div class="row">
-	<div class="column">
-		<p>If no parameters are supplied defaults are used ().</p>
-	</div>
-</div>
--->
-{% include product-ad-html.html %}
-<div class="row">
-	<div class="column sm-one-half">
-
-
-		<div id="cmProductAd0"
-			data-productid="1353"
+		<div id="cmSimpleAd0"
+			data-imagepath="http://downloads.channelmaster.com/Banner+Images/category-banner-outdoor-001.png"
+			data-url="http://www.channelmaster.com/ProductDetails.asp?ProductCode=CM-7500GB16"
+			data-campaign="cat-outdoor-antenna"
+		></div>
+		<div id="cmSimpleAd1"
+			data-width="938"
+			data-height="244"
+			data-imagepath="http://downloads.channelmaster.com/Banner+Images/category-banner-outdoor-001.png"
+			data-url="http://www.channelmaster.com/ProductDetails.asp?ProductCode=CM-7500GB16"
+			data-campaign="cat-outdoor-antenna"
 		></div>
 	</div>
-	<div class="column sm-one-half">
+	<div class="column">
 		<h3>Available Parameters</h3>
 		<ul>
-			<li>data-productid - numeric - ex: 1250</li>
-			<!--li>data-height - numeric - ex: 250</li>
-			<li>data-affiliateid - string - ex: aff123</li>
-			<li>data-campaign - 3 digit number - ex: 001</li-->
+			<li>data-imagepath - fullurl - ex: http://downloads.channelmaster.com/Banner+Images/category-banner-outdoor-001.png</li>
+			<li>data-url - fullurl - ex: http://www.channelmaster.com/ProductDetails.asp?ProductCode=CM-7500GB16</li>
+			<li>data-campaign - string - ex: cat-outdoor-antenna</li>
+			<li>data-width - numeric - ex: 250 (leave off for responsive ad)</li>
+			<li>data-height - numeric - ex: 250 (leave off for responsive ad)</li>
 		</ul>
 		<!--h3>Available Sizes</h3>
 		<ul>
@@ -66,7 +45,7 @@ path: ../
 <h2>Additional States</h2>
 <div class="row">
 	<div class="column">
-		<p>If no productid is passed, error appears.</p>
-		<div id="cmProductAd1"></div>
+		<p>If no imagepath is passed, error appears.</p>
+		<div id="cmSimpleAd2"></div>
 	</div>
 </div>
