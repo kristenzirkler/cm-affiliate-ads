@@ -16,8 +16,8 @@ oi.domReady(function () {
         adHeight = '',
         affiliateID = '',
         adCampaign = '000',
-        adImageUrl = 'http://downloads.channelmaster.com/Affiliate+Images/'
-        adLink = 'http://www.channelmaster.com/ProductDetails.asp?ProductCode=CM-7500GB16&Click=116838'; //must have ?
+        adImageUrl = '//downloads.channelmaster.com/Affiliate+Images/'
+        adLink = 'https://www.channelmaster.com/ProductDetails.asp?ProductCode=CM-7500GB16&Click=116838'; //must have ?
 
     for(var i = 0; el = document.getElementById(dataTarget + i); i++) {
         adSlot = dataTarget+i;
